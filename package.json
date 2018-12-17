@@ -1,28 +1,41 @@
 {
-    "name": "png-js",
-    "description": "A PNG decoder in CoffeeScript",
-    "version": "0.1.1",
-    "author": {
-        "name": "Devon Govett",
-        "email": "devongovett@gmail.com",
-        "url": "http://badassjs.com/"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/devongovett/png.js.git"
-    },
-    "bugs": "http://github.com/devongovett/png.js/issues",
-    "devDependencies": {
-        "coffee-script": "1.4.0"
-    },
-    "scripts": {
-        "prepublish": "coffee -c png-node.coffee"
-    },
-    "main": "png-node.js",
-    "engine": [
-        "node >= v0.6.0"
-    ],
-    "dependencies": {
-        "pako": "^1.0.6"
-    }
+  "name": "png-ts",
+  "version": "0.0.1-rc5",
+  "description": "A PNG decoder written in TypeScript",
+  "main": "lib/png.js",
+  "unpkg": "dist/png-ts.min.js",
+  "module": "es/index.js",
+  "types": "lib/png.d.ts",
+  "scripts": {
+    "make": "node Makefile.js",
+    "lint": "node Makefile.js lint",
+    "releaseNext": "node Makefile.js releaseNext",
+    "releaseLatest": "node Makefile.js releaseLatest",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devongovett/png.js.git"
+  },
+  "author": "Andrew Dillon <andrew.dillon.j@gmail.com>",
+  "contributors": [
+    "Devon Govett <devongovett@gmail.com> (http://badassjs.com/)"
+  ],
+  "bugs": "https://github.com/Hopding/png-ts/issues",
+  "devDependencies": {
+    "@types/pako": "^1.0.0",
+    "prettier": "^1.15.3",
+    "rollup": "^0.68.0",
+    "rollup-plugin-analyzer": "^2.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "shelljs": "^0.8.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "pako": "^1.0.6"
+  }
 }
