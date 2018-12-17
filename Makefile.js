@@ -100,8 +100,9 @@ target.releaseLatest = async () => {
   console.log('Created git tag:', tagName);
 
   const zipName = `png-ts_${tagName}.zip`;
-  exec(`zip -r ${zipName} .`);
+  exec(`zip --exclude node_modules -r ${zipName} .`);
   console.log('Zip archive of', tagName, 'written to', zipName);
 
+  console.log();
   console.log('🎉   Release of', version, 'complete!  🎉');
 };
