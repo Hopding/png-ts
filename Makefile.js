@@ -90,7 +90,7 @@ target.releaseLatest = async () => {
     return;
   }
 
-  execSync('yarn', ['publish', '--tag', 'latest'], { stdio: 'inherit' });
+  execFileSync('yarn', ['publish', '--tag', 'latest'], { stdio: 'inherit' });
 
   const tagName = `v${packageJson.version}`;
   exec(`git commit -am 'Bump version to ${packageJson.version}'`);
