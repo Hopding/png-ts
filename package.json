@@ -1,6 +1,6 @@
 {
   "name": "png-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A PNG decoder written in TypeScript",
   "main": "lib/png.js",
   "unpkg": "dist/png-ts.min.js",
@@ -22,6 +22,9 @@
     "Devon Govett <devongovett@gmail.com> (http://badassjs.com/)"
   ],
   "bugs": "https://github.com/Hopding/png-ts/issues",
+  "dependencies": {
+    "pako": "^1.0.6"
+  },
   "devDependencies": {
     "@types/pako": "^1.0.0",
     "prettier": "^1.15.3",
@@ -34,8 +37,5 @@
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.2"
-  },
-  "dependencies": {
-    "pako": "^1.0.6"
   }
 }
