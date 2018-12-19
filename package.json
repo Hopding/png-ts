@@ -4,7 +4,7 @@
   "description": "A PNG decoder written in TypeScript",
   "main": "lib/png.js",
   "unpkg": "dist/png-ts.min.js",
-  "module": "es/index.js",
+  "module": "es/png.js",
   "types": "lib/png.d.ts",
   "scripts": {
     "make": "node Makefile.js",
