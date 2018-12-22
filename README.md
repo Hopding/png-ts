@@ -1,24 +1,28 @@
-# png-ts
+<h1>
+  png-ts
 
-<!-- NPM Version -->
-<a href="https://www.npmjs.com/package/png-ts">
-  <img
-    src="https://img.shields.io/npm/v/png-ts.svg?style=flat-square"
-    alt="NPM Version"
-  />
-</a>
+  <br />
 
-<!-- Prettier Badge -->
-<a href="https://prettier.io/">
-  <img
-    src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"
-    alt="Prettier Badge"
-  />
-</a>
+  <!-- NPM Version -->
+  <a href="https://www.npmjs.com/package/png-ts">
+    <img
+      src="https://img.shields.io/npm/v/png-ts.svg?style=flat-square"
+      alt="NPM Version"
+    />
+  </a>
+
+  <!-- Prettier Badge -->
+  <a href="https://prettier.io/">
+    <img
+      src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"
+      alt="Prettier Badge"
+    />
+  </a>
+</h1>
 
 > A PNG decoder written in TypeScript
 
-This project is a fork of [`png.js`](https://github.com/devongovett/png.js) and was created for use in [`pdf-lib`](https://github.com/Hopding/pdf-lib). The original project is written in CoffeeScript. It contains a file for browser environments (`png.coffee`) and a different file for Node environments (`png-node.coffee`). This fork is a rewrite of the original project in TypeScript. All environment specific code has been removed or replaced with environment-independent code.
+This project is a fork of [`png.js`](https://github.com/devongovett/png.js) and was created for use in [`pdf-lib`](https://github.com/Hopding/pdf-lib). The original project is written in CoffeeScript. It contains a file for browser environments (`png.coffee`) and a different file for Node environments (`png-node.coffee`). This fork is a rewrite of the original project in TypeScript. All environment specific code has been removed or replaced with environment-independent code. There is now a single `src/png.ts` file.
 
 ## Example of `PNG.decodePixels`
 ```javascript
